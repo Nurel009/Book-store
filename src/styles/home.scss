@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 50px;
     padding-bottom: 50px;
-    max-width: 1520px;
+    width: 1520px;
     .categories{
         width: 1520px; /* Full width on mobile */
         height: auto; /* Adjust height as needed */
@@ -69,11 +69,11 @@
         }
         @media (max-width: 1000px) {
             width: 100%;
-            max-width: 1360px;
+            width: 1440px;
         }
         @media (max-width: 768px) {
             width: 100%; /* Adjust width for smaller screens */
-            max-width: 1220px; /* New max-width for responsiveness */
+            max-width: 1520px; /* New max-width for responsiveness */
             .cont1 .text {
                 width: 100%; /* Full width on mobile */
                 padding-left: 10px; /* Adjust padding for mobile */
@@ -90,7 +90,7 @@
         }
     }
     .release{
-        width: 1440px;
+        width: 1520px;
         height: 976px;
         padding-top: 40px;
         display: flex;
@@ -134,7 +134,7 @@
         }
         @media (max-width: 1000px) {
             width: 100%;
-            max-width: 1360px;
+            max-width: 1520px;
             .cards{
                 gap: 20px;
             }
@@ -142,7 +142,7 @@
     }
     @media (max-width: 768px) {
         .release {
-            max-width: 1250px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
         }
     
@@ -159,7 +159,7 @@
     }
     @media (max-width: 480px) {
         .release {
-            max-width: 1120px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
         }
         .release .cards {
@@ -172,7 +172,7 @@
         }
     }
     .gmail{
-        width: 1440px;
+        width: 1520px;
         height: 499px;
         display: flex;
         flex-direction: column;
@@ -239,12 +239,12 @@
         }
         @media (max-width: 1000px) {
             width: 100%;
-            max-width: 1360px;
+            max-width: 1520px;
         }
     }
     @media (max-width: 768px) {
         .gmail {
-            max-width: 1250px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
         }
     
@@ -273,7 +273,7 @@
     }
     @media (max-width: 480px) {
         .gmail {
-            max-width: 1120px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
             gap: 50px;
         }
@@ -296,7 +296,7 @@
         }
     }
     .articles{
-        width: 1440px;
+        width: 1520px;
         height: 900px;
         padding-top: 40px;
         display: flex;
@@ -367,12 +367,12 @@
         }
         @media (max-width: 1000px) {
             width: 100%;
-            max-width: 1360px;
+            max-width: 1520px;
         }
     }
     @media (max-width: 768px) {
         .articles {
-            max-width: 1220px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
             .cards{
                 flex-wrap: wrap;
@@ -387,7 +387,7 @@
     }
     @media (max-width: 480px) {
         .articles {
-            max-width: 1120px;
+            max-width: 1520px;
             height: auto; /* Adjust height as needed */
             .cards{
                 flex-wrap: wrap;

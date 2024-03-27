@@ -1,83 +1,82 @@
-.slaid{
-    width: 100%; /* Занимать всю доступную ширину */
-    max-width: 1440px; /* Максимальная ширина для содержимого */
-    height: auto; /* Автоматическая высота для подгонки контента */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
-    .cont1{
-        width: 100%; /* Занимать всю доступную ширину */
-        max-width: 100%; /* Максимальная ширина для содержимого */
+    .slaid{
+        max-width: 1520px; /* Максимальная ширина для содержимого */
         height: auto; /* Автоматическая высота для подгонки контента */
-        margin: 20px; /* Отступы между контейнерами */
-        border-radius: 7px;
-        padding: 20px;
-        .text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
+        .cont1{
             width: 100%; /* Занимать всю доступную ширину */
             max-width: 100%; /* Максимальная ширина для содержимого */
             height: auto; /* Автоматическая высота для подгонки контента */
+            margin: 20px; /* Отступы между контейнерами */
             border-radius: 7px;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            .teks{
-                width: 607px;
-                height: 261px;
-                top: 112px;
-                left: 149px;
-                gap: 50px;
-                h1{
-                    font-family: Inter;
-                    font-size: 60px;
-                    font-weight: 600;
-                    line-height: 87px;
-                    letter-spacing: -0.02em;
-                    text-align: left;
-                    color: rgba(57, 50, 128, 1);
-                }
-                p{
-                    font-family: Inter;
-                    font-size: 22px;
-                    font-weight: 500;
-                    line-height: 40px;
-                    letter-spacing: 0.04em;
-                    text-align: left;
-                    color: rgba(57, 50, 128, 1);
-                }
-            }
-            button{
-                width: 197px;
-                height: 61px;
+            .text{
+                width: 100%; /* Занимать всю доступную ширину */
+                max-width: 100%; /* Максимальная ширина для содержимого */
+                height: auto; /* Автоматическая высота для подгонки контента */
                 border-radius: 7px;
+                padding: 20px;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
-                font-family: Inter;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 35px;
-                letter-spacing: 0.1em;
-                text-align: center;
-                color: rgba(57, 50, 128, 1);
-                border: 1px solid rgba(57, 50, 128, 1);
-                background: none;
+                flex-direction: column;
+                gap: 30px;
+                .teks{
+                    width: 607px;
+                    height: 261px;
+                    top: 112px;
+                    left: 149px;
+                    gap: 50px;
+                    h1{
+                        font-family: Inter;
+                        font-size: 60px;
+                        font-weight: 600;
+                        line-height: 87px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: rgba(57, 50, 128, 1);
+                    }
+                    p{
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 40px;
+                        letter-spacing: 0.04em;
+                        text-align: left;
+                        color: rgba(57, 50, 128, 1);
+                    }
+                }
+                button{
+                    width: 197px;
+                    height: 61px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    color: rgba(57, 50, 128, 1);
+                    border: 1px solid rgba(57, 50, 128, 1);
+                    background: none;
+                }
+                
             }
-            
+        }
+        .cont2{
+            width: 713px;
+            height: 657.25px;
+            left: 679px;
+            padding-left: 50px;
         }
     }
-    .cont2{
-        width: 713px;
-        height: 657.25px;
-        left: 679px;
-        padding-left: 50px;
-    }
-}
 @media only screen and (max-width: 1000px) {
     .slaid {
-        max-width: 1250px;
+        max-width: 1520px;
         height: auto;
         display: flex;
         align-items: center; /* Centering items horizontally */
@@ -94,80 +93,135 @@
         }
     }
 }
+@media only screen and (max-width: 1200px) {
+        .slaid {
+            max-width: 1200px;
+        }
+        .cont1, .cont2 {
+            width: 100%; /* Занимать всю доступную ширину */
+            max-width: 100%; /* Максимальная ширина для содержимого */
+            margin: 20px; /* Отступы между контейнерами */
+            padding: 20px;
+            text-align: center; /* Центрирование текста */
+        }
+        
+        .cont2 {
+            padding-left: 0; /* Убрать левый отступ */
+        }
+        
+        .teks {
+            width: 100%; /* Занимать всю доступную ширину */
+            max-width: 100%; /* Максимальная ширина для содержимого */
+            gap: 20px; /* Уменьшить промежуток между элементами */
+            
+            h1 {
+                font-size: 40px; /* Уменьшить размер шрифта заголовка */
+                line-height: 60px; /* Изменить высоту строки для заголовка */
+            }
+            
+            p {
+                font-size: 18px; /* Уменьшить размер шрифта абзаца */
+                line-height: 30px; /* Изменить высоту строки для абзаца */
+            }
+            
+            button {
+                width: 100%; /* Занимать всю доступную ширину */
+                max-width: 200px; /* Ограничить максимальную ширину кнопки */
+            }
+        }
+    }
 @media only screen and (max-width: 768px) {
     .slaid {
-        max-width: 1250px;
+        max-width: 1520px;
         height: auto;
         display: flex;
         align-items: center; /* Centering items horizontally */
         background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
-        .cont1 {
-            width: 100%;
-            height: auto;
-            margin: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .slaid {
+        max-width: 1520px;
+        height: auto; /* Автоматическая высота для подгонки контента */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
+        .cont1{
+            width: 100%; /* Занимать всю доступную ширину */
+            max-width: 100%; /* Максимальная ширина для содержимого */
+            height: auto; /* Автоматическая высота для подгонки контента */
+            margin: 20px; /* Отступы между контейнерами */
             border-radius: 7px;
             padding: 20px;
-            .text {
-                width: 100%;
-                height: auto;
+            .text{
+                width: 100%; /* Занимать всю доступную ширину */
+                max-width: 100%; /* Максимальная ширина для содержимого */
+                height: auto; /* Автоматическая высота для подгонки контента */
                 border-radius: 7px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                .teks {
-                    width: 100%; /* Adjusted width for mobile */
-                    height: auto; /* Automatic height for mobile */
-                    gap: 20px; /* Reduced gap for mobile */
-                    h1 {
-                        font-size: 32px; /* Adjusted font size for mobile */
-                        line-height: 44px; /* Adjusted line height for mobile */
-                        text-align: center; /* Centering text for mobile */
+                .teks{
+                    width: 607px;
+                    height: 261px;
+                    top: 112px;
+                    left: 149px;
+                    gap: 50px;
+                    h1{
+                        font-family: Inter;
+                        font-size: 60px;
+                        font-weight: 600;
+                        line-height: 87px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                        color: rgba(57, 50, 128, 1);
                     }
-                    p {
-                        font-size: 18px; /* Adjusted font size for mobile */
-                        line-height: 32px; /* Adjusted line height for mobile */
-                        text-align: center; /* Centering text for mobile */
+                    p{
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 40px;
+                        letter-spacing: 0.04em;
+                        text-align: left;
+                        color: rgba(57, 50, 128, 1);
                     }
                 }
-                button {
-                    width: 100%; /* Adjusted button width for mobile */
-                    max-width: 197px; /* Maximum width for mobile */
+                button{
+                    width: 197px;
                     height: 61px;
                     border-radius: 7px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 5px;
-                    font-size: 16px; /* Adjusted font size for mobile */
-                    line-height: 35px; /* Adjusted line height for mobile */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    letter-spacing: 0.1em;
+                    text-align: center;
+                    color: rgba(57, 50, 128, 1);
+                    border: 1px solid rgba(57, 50, 128, 1);
+                    background: none;
                 }
+                
             }
         }
-        .cont2 {
-            width: 100%; /* Adjusted width for mobile */
-            max-width: 100%; /* Maximum width for mobile */
-            display: flex;
-            justify-content: center;
-            height: auto; /* Automatic height for mobile */
-            padding-left: 20px; /* Adjusted padding for mobile */
+        .cont2{
+            width: 713px;
+            height: 657.25px;
+            left: 679px;
+            padding-left: 50px;
         }
-    }
-}
-@media (max-width: 480px) {
-    .slaid {
-        max-width: 1120px;
-    }
-    .cont1, .text, .teks {
-        width: 100%; /* Adjust width as needed */
-        max-width: 100%; /* Adjust max-width as needed */
     }
 }
 
 
 // products
 .products{
-    max-width: 1440px;
+    max-width: 1520px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +318,7 @@
     .products {
         display: flex;
         justify-content: center;
-        width: 1250px;
+        width: 1520px;
         height: auto;
         align-items: center;
         flex-wrap: wrap;
@@ -305,7 +359,7 @@
 
 //aksi
 .aksi{
-    width: 1440px;
+    width: 1520px;
     height: 657.25px;
     display: flex;
     justify-content: space-between;
@@ -391,15 +445,15 @@
         padding-left: 50px;
         padding-top: 70px;
     }
-    @media (max-width: 1000px) {
-        max-width: 1360px; /* New max-width for responsiveness */
+    @media only screen and (max-width: 1000px) {
+        max-width: 1520px; /* New max-width for responsiveness */
         justify-content: center;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .aksi{
-        max-width: 1300px;
+        max-width: 1520px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -440,7 +494,7 @@
 }
 @media only screen and (max-width: 480px) {
     .aksi{
-        max-width: 1300px;
+        max-width: 1520px;
         justify-content: center;
         .cont2{
             img{

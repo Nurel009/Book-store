@@ -12,6 +12,7 @@ import Favorites from "./pages/Favorites/Favorites"
 import Login from "./pages/Login/Login"
 import Auth from "./components/Layout/Auth"
 import Laik from "./pages/Laik/Laik"
+import BurgerMenu from "./components/Layout/Header/BurgerMenu/BurgerMenu"
 import './styles/styles.scss'
 
 
@@ -44,6 +45,10 @@ function App() {
           {
             path:"/blog",
             element: <Blog/>
+          },
+          {
+            path:"/burgermenu",
+            element: <BurgerMenu/>
           },
           {
             path:"/home",

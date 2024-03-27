@@ -12,7 +12,7 @@ const HeaderTop = () => {
         <div className="header__top">
             <div className="contacts">
                 <img src={contac} alt=""/>
-                <a href="tel:996772825266">+91 8374902234</a>
+                <a href="tel:996770777707">+996770777707</a>
             </div>
             <div className="mesenger">
                 <Link to=''>

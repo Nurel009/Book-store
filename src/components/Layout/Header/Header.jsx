@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderTop from './HeaderTop/HeaderTop';
+import BurgerMenu from '../../../components/Layout/Header/BurgerMenu/BurgerMenu';
 import { Link } from 'react-router-dom';
 import { useSelector} from 'react-redux';
 import logo from '../../../assets/header/logo.png'
@@ -19,12 +20,12 @@ const Header = () => {
                     </Link>
                 </div>
                 <ul className="category">
-                    <Link to={'/'}><li>HOME</li></Link>
-                    <Link to={'/about'}><li>ABOUT US</li></Link>
-                    <Link to={'/books'}><li>BOOKS</li></Link>
-                    <Link to={'/newrelease'}><li>NEW RELEASE</li></Link>
-                    <Link to={'/contacts'}><li>CONTACT US</li></Link>
-                    <Link to={'/blog'}><li>BLOG</li></Link>
+                    <Link to={'/'}><li className={onclick === 'HOME' ? 'active' : ''}>HOME</li></Link>
+                    <Link to={'/about'} className={onclick === 'ABOUT US' ? 'active' : ''}><li>ABOUT US</li></Link>
+                    <Link to={'/books'} className={onclick === 'BOOKS' ? 'active' : ''}><li>BOOKS</li></Link>
+                    <Link to={'/newrelease'} className={onclick === 'NEW RELEASE' ? 'active' : ''}><li>NEW RELEASE</li></Link>
+                    <Link to={'/contacts'} className={onclick === 'CONTACT US' ? 'active' : ''}><li>CONTACT US</li></Link>
+                    <Link to={'/blog'} className={onclick === 'BLOG' ? 'active' : ''}><li>BLOG</li></Link>
                 </ul>
                 <div className="authc">
                     {
@@ -32,7 +33,7 @@ const Header = () => {
                         <Link to={'auth/login'}>
                             <span>
                                 <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.78125 9.5C8.875 9.5 8.46875 10 7 10C5.5 10 5.09375 9.5 4.1875 9.5C1.875 9.5 0 11.4062 0 13.7188V14.5C0 15.3438 0.65625 16 1.5 16H12.5C13.3125 16 14 15.3438 14 14.5V13.7188C14 11.4062 12.0938 9.5 9.78125 9.5ZM12.5 14.5H1.5V13.7188C1.5 12.2188 2.6875 11 4.1875 11C4.65625 11 5.375 11.5 7 11.5C8.59375 11.5 9.3125 11 9.78125 11C11.2812 11 12.5 12.2188 12.5 13.7188V14.5ZM7 9C9.46875 9 11.5 7 11.5 4.5C11.5 2.03125 9.46875 0 7 0C4.5 0 2.5 2.03125 2.5 4.5C2.5 7 4.5 9 7 9ZM7 1.5C8.625 1.5 10 2.875 10 4.5C10 6.15625 8.625 7.5 7 7.5C5.34375 7.5 4 6.15625 4 4.5C4 2.875 5.34375 1.5 7 1.5Z" fill="#444444" />
+                                    <path d="M9.78125 9.5C8.875 9.5 8.46875 10 7 10C5.5 10 5.09375 9.5 4.1875 9.5C1.875 9.5 0 11.4062 0 13.7188V14.5C0 15.3438 0.65625 16 1.5 16H12.5C13.3125 16 14 15.3438 14 14.5V13.7188C14 11.4062 12.0938 9.5 9.78125 9.5ZM12.5 14.5H1.5V13.7188C1.5 12.2188 2.6875 11 4.1875 11C4.65625 11 5.375 11.5 7 11.5C8.59375 11.5 9.3125 11 9.78125 11C11.2812 11 12.5 12.2188 12.5 13.7188V14.5ZM7 9C9.46875 9 11.5 7 11.5 4.5C11.5 2.03125 9.46875 0 7 0C4.5 0 2.5 2.03125 2.5 4.5C2.5 7 4.5 9 7 9ZM7 1.5C8.625 1.5 10 2.875 10 4.5C10 6.15625 8.625 7.5 7 7.5C5.34375 7.5 4 6.15625 4 4.5C4 2.875 5.34375 1.5 7 1.5Z" fill="#444444" />
                                 </svg>
                             </span> &nbsp;Войти
                         </Link>
@@ -44,6 +45,7 @@ const Header = () => {
                         <img src={laik} alt="" /> &nbsp;Избранное
                     </Link>
                 </div>
+                <BurgerMenu/>
             </div>
         </header>
     );

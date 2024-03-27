@@ -2,7 +2,6 @@
   max-width: 1500px;
   .auth{
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
   }
@@ -55,6 +54,25 @@
     line-height: normal;
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+    .auth {
+      width: 1220px;
+      padding: 20px; /* Adjust padding as needed */
+      justify-content: center;
+    }
+
+    label,
+    input,
+    .login__btn,
+    p,
+    p a {
+      font-size: 14px; /* Adjust font size as needed */
+    }
+
+    input {
+      padding: 10px; /* Adjust padding as needed */
+    }
+  }
 }
 
 
@@ -62,25 +80,15 @@
   @media only screen and (max-width: 480px){
     .auth {
       display: flex;
-      height: 100vh;
+      width: 1500px;
       align-items: center;
       justify-content: center;
-      .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-          width: 200px;
-          height: 200px;
-        }
-      }
       .content {
         width: 50%;
-        border-left: 1px solid #d4d6e0;
         height: 100%;
         padding-left: 87px;
         display: flex;
+        justify-content: center;
         align-items: center;
       }
     }

@@ -3,7 +3,7 @@
     padding: 20px;
     background: red;
     padding-top: 50px;
-    max-width: 1440px;
+    width: 1520px;
     .container{
         padding-top: 50px;
         height: auto; /* Автоматическая высота */
@@ -130,6 +130,29 @@
             letter-spacing: 0.02em;
             text-align: left;
             color: rgba(255, 255, 255, 1);
+        }
+    }
+    @media (max-width: 1200px) {
+        .footer{
+            max-width: 1520px;
+            .container {
+                justify-content: center;
+    
+                .con1 {
+                  width: 100%;
+                  max-width: none;
+    
+                  .footer__logo {
+                    max-width: 100%;
+                  }
+                }
+    
+                .con2 {
+                  width: 100%;
+                  max-width: none;
+                  padding-left: 0;
+                }
+            }
         }
     }
 }
