@@ -4,8 +4,6 @@ import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Books from "./pages/Books/Books"
 import Contacts from "./pages/Contacts/Contacts"
-import Blog from "./pages/Blog/Blog"
-import NewRelease from "./pages/NewRelease/NewRelease"
 import Register from "./pages/Register/Register"
 import Productf from "./pages/Productf/Productf"
 import Favorites from "./pages/Favorites/Favorites"
@@ -43,20 +41,12 @@ function App() {
             element: <Contacts/>
           },
           {
-            path:"/blog",
-            element: <Blog/>
-          },
-          {
             path:"/burgermenu",
             element: <BurgerMenu/>
           },
           {
             path:"/home",
             element: <Home/>
-          },
-          {
-            path:"/newrelease",
-            element: <NewRelease/>
           },
           {
             path:"/favorites",

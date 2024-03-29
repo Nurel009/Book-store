@@ -11,4 +11,4 @@ export const bookSlice = createApi({
     })
 })
 
-export const {useGetAllBookQuery} = bookSlice
+export const {useGetAllBookQuery, useGetProductsQuery} = bookSlice

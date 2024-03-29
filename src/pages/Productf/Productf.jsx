@@ -13,7 +13,7 @@ const Productf = () => {
         const dispatch = useDispatch();
         const handleAddToFavorites = () => {
             dispatch(addToFavorites(
-            { id: data.id,
+            {   id: data.id,
                 image: data.image,
                 price: data.price,
                 title: data.title,
